@@ -17,31 +17,46 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./Images/favicon-16x16.png">
     <link rel="manifest" href="./Images/site.webmanifest">
     <!--End Of Favicon-->
-    <title>Milesplit</title>
+    <title>Calculator</title>
   </head>
   <body>
-
-  <a href="array.php">Array~</a>
-  
-  <a href="old.php">Old~  </a>
-  
-  <a href="calculator.php">Calculator~  </a>
-  
-  <a href="calender.php">Calender~ </a>
-
-  <a href="switch.php">Switch</a>
-  <br>
-
-    <from method="GET">
-      <input type="text" name="person">
-      <button>SUBMIT</button>
-    </form>
-
-
-      <?php 
-        $name = $_GET['person'];
-        echo $name. " will run a 1:56 800m.";
-      
+      <form class="calculator">
+          <input type="text" name="num1" placeholder="Number 1">
+          <input type="text" name="num2" placeholder="Number 2">
+          <select name="operator" >
+              <option>None</option>
+              <option>Add</option>
+              <option>Subtract</option>
+              <option>Multiply</option>
+              <option>Divide</option>
+          </select>
+          <br>
+          <button type="submit" name="submit" value="submit">Calculate</button>
+      </form>
+      <p>The answer is:</p>
+      <?php
+            if(isset($_GET['submit'])){
+                $result1 = $_GET['num1'];
+                $result2 = $_GET['num2'];
+                $operator = $_GET['operator'];
+                switch ($operator){
+                    case "None":
+                        echo "You need to select a method!";
+                    break;
+                    case "Add":
+                        echo $result1 + $result2;
+                    break;
+                    case "Subtract":
+                        echo $result1 - $result2;
+                    break;
+                    case "Multiply":
+                        echo $result1 * $result2;
+                    break;
+                    case "Divide":
+                        echo $result1 / $result2;
+                    break;
+                };
+            };
       ?>
 
  
@@ -52,11 +67,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-

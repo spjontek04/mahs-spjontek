@@ -17,32 +17,30 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./Images/favicon-16x16.png">
     <link rel="manifest" href="./Images/site.webmanifest">
     <!--End Of Favicon-->
-    <title>Milesplit</title>
+    <title>Switch</title>
   </head>
   <body>
+     <?php
+        $x = "steven";
 
-  <a href="array.php">Array~</a>
-  
-  <a href="old.php">Old~  </a>
-  
-  <a href="calculator.php">Calculator~  </a>
-  
-  <a href="calender.php">Calender~ </a>
+        switch ($x) {
+            case "steven":
+                echo "You ran 2:10";
+            break;
+            case "danny":
+                echo "You ran 2:13";
+            break;
+            case "willy":
+                echo "You ran 2:14";
+            break;
+            case "paul":
+                echo "You ran 2:20";
+            break;
+            default:
+                echo "You are too slow";
+        }
 
-  <a href="switch.php">Switch</a>
-  <br>
-
-    <from method="GET">
-      <input type="text" name="person">
-      <button>SUBMIT</button>
-    </form>
-
-
-      <?php 
-        $name = $_GET['person'];
-        echo $name. " will run a 1:56 800m.";
-      
-      ?>
+     ?>
 
  
     <!-- Optional JavaScript -->
@@ -52,11 +50,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
