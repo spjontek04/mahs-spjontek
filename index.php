@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,34 +18,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./Images/favicon-16x16.png">
     <link rel="manifest" href="./Images/site.webmanifest">
     <!--End Of Favicon-->
-    <title>Milesplit</title>
+    <title>Home</title>
   </head>
   <body>
 
-  <a href="array.php">Array~</a>
-  
-  <a href="old.php">Old~  </a>
-  
-  <a href="calculator.php">Calculator~  </a>
-  
-  <a href="calender.php">Calender~ </a>
-
-  <a href="switch.php">Switch</a>
+  <h1>Welcome Coach B</h1>
   <br>
+  <h2>Come check out these dope pages:</h2>
+  <?php
+    include "header.php"
+  ?>
+    
+    
 
-    <from method="GET">
-      <input type="text" name="person">
-      <button>SUBMIT</button>
-    </form>
-
-
-      <?php 
-        $name = $_GET['person'];
-        echo $name. " will run a 1:56 800m.";
-      
-      ?>
-
- 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

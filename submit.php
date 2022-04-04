@@ -20,37 +20,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./Images/favicon-16x16.png">
     <link rel="manifest" href="./Images/site.webmanifest">
     <!--End Of Favicon-->
-    <title>Calender</title>
+    <title>Milesplit</title>
   </head>
   <body>
-     <?php
-        $dayofweek = date("w");
 
-        switch ($dayofweek) {
-            case 1:
-                echo "It is Monday!";
-                break;
-            case 2:
-                echo "It is Tuesday!";
-                break;
-            case 3:
-                echo "It is Wednesday!";
-                break;        
-            case 4:
-                echo "It is Thursday!";
-                break;   
-            case 5:
-                echo "It is Friday!";
-                break;
-            case 6:
-                echo "It is Saturday!";
-                break;
-            case 0:
-                echo "It is Sunday!";
-                break;     
-        }
+    <from method="GET">
+      <input type="text" name="person">
+      <button>SUBMIT</button>
+    </form>
 
-     ?> 
+
+      <?php 
+        $name = $_GET['person'];
+        echo $name. " will run a 1:56 800m.";
+      
+      ?>
 
  
     <!-- Optional JavaScript -->
@@ -60,3 +44,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+

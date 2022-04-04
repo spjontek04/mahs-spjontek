@@ -1,3 +1,6 @@
+<?php
+ include "header.php"
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,7 +28,7 @@
 
         switch ($x) {
             case "steven":
-                echo "You ran 2:10";
+                echo "You ran 2:07";
             break;
             case "danny":
                 echo "You ran 2:13";
