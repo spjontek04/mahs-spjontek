@@ -27,8 +27,6 @@
   <h2>Come check out these dope pages:</h2>
   <?php
     include "header.php";
-
-    
   ?>
 
   <?php
